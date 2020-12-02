@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <title>Mieraf's Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <h1><a tabindex="1"href="index.html" id='name'>Mieraf Mulat</a></h1>
+      <nav aria-label='Site Menu' id='menu'>
+        <ul>
+          <li class="projectNav">
+            <a href='#menu' aria-haspopup="true" aria-expanded="false">Projects</a>
+            <ul class="subnav hide" id='subnav'>
+              <li ><a href="project.html">Spotify Reccomendation Site</a></li>
+              <li ><a href="project2.html">Community currency Site</a></li>
+            </ul>
+          </li>
+          <li ><a href="resume.html">Resume</a></li>
+          <li ><a href="bio.html">About</a> </li>
+          <li ><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <script type="text/javascript">
+        manageLink();
+      </script>
+    </header>
+
+    <div class="shortBio">
+
+      <div class="bioText" aria-labelledby='Introduction'>
+        <h3>Hi, I am Mieraf!</h3>
+        <p>I am a sophomore studying Computer Science at Northwestern University. I am currently looking for internships.</p>
+          <a href="bio.html" role="button">More About Me</a>
+      </div>
+
+    </div>
+
+    <div class="showcase" aria-labelledby='Project Showcase'>
+      <h3>Here is some of my work:</h3>
+      <div class="project">
+        <h4>Spotify Reccomendation App</h4>
+        <div class="projectdetail" aria-labelledby='Project One'>
+          <p>I single-handedly developed a React app that utilizes the Spotify Web API to provide users song recommendations based on their recently played songs.</p>
+             <a href="project.html" class='projectBtn' role='button'>Learn More</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h4>Community currency</h4>
+        <div class="projectdetail" aria-labelledby='Project Two'>
+          <p>As an active member of DISC NU, I Collaborated on creating a website that collects and manages data on receptacles that collect foreign currency left at airports.</p>
+          <a href="project2.html" class='projectBtn' role="button">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>

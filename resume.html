@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <title>Mieraf's Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <h1><a tabindex="1"href="index.html" id='name'>Mieraf Mulat</a></h1>
+      <nav aria-label='Site Menu' id='menu'>
+        <ul>
+          <li class="projectNav">
+            <a tabindex="2" href='#menu' aria-haspopup="true" aria-expanded="false">Projects</a>
+            <ul class="subnav hide" id='subnav'>
+              <li ><a tabindex="3"href="project.html">Spotify Reccomendation Site</a></li>
+              <li ><a tabindex="4"href="project2.html">Community currency Site</a></li>
+            </ul>
+          </li>
+          <li ><a tabindex="5"href="resume.html">Resume</a></li>
+          <li ><a tabindex="6"href="bio.html">About</a> </li>
+          <li ><a tabindex="7"href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <script type="text/javascript">
+        manageLink();
+      </script>
+    </header>
+
+      <div class="resumeBody">
+
+        <div aria-labelledby='Education' class="resSection open">
+          <h2  tabindex="8"class="resHeading">Education</h2>
+          <div class="content">
+            <h3>Northwestern University</h3>
+            <span>B.S in Computer Science from McCormick School of Engineering</span>
+            <span>Graduating June 2023</span>
+            <h3>Relevant Coursework</h3>
+            <ul>
+              <li>Fundamental Computer Programming I & II</li>
+              <li>Data Structures and Algorithms</li>
+              <li>Mathematical foundations of CS</li>
+              <li>Human Computer Interaction</li>
+            </ul>
+        </div>
+      </div>
+
+        <div aria-labelledby='Skills and Awards' class="resSection close" >
+          <h2 tabindex="9" class="resHeading">Skills & Awards</h2>
+          <div class="content">
+            <h3>Technical Skills:</h3>
+            <span>Proficient in Python, Javascript, HTML/CSS, MATLAB</span>
+            <span>Novice in C/C++, Racket, Visual Basics</span>
+            <h3>languages:</h3>
+            <span>Fluent in Amharic, English; Conversational Proficiency in French </span>
+
+          </div>
+        </div>
+
+        <div aria-labelledby='Awards' class="resSection close">
+
+          <h2 tabindex="10" class="resHeading">Awards</h2>
+          <div class="content">
+            <ul>
+              <li>DTC – Communication Award</li>
+              <li>Rewriting the Code Fellow</li>
+              <li>Sponsored attendee to vGHC by Capital One and Google</li>
+            </ul>
+          </div>
+        </div>
+        <div aria-labelledby='Experiences' class="resSection close">
+          <h2 tabindex="11" class="resHeading">Experiences</h2>
+          <div class="content">
+            <h3>Song Recommendation App</h3>
+            <span>Single-handedly developed a React app that utilizes the Spotify Web API to provide users song recommendations based on their recently played songs.</span>
+            <h3>Develop + Innovate for Social Change</h3>
+            <span>An active member of a DISC NU. Collaborated on building a website that collects and manages data on receptacles that collect foreign currency left at airports </span>
+            <h3>Google Computer Science Summer Institute</h3>
+            <span>Participated in a 3-week intensive program sponsored by Google that taught various computer science subjects</span>
+            <h3>Columbus Student Hackathon</h3>
+            <span>Twice attended a 10-week programming hackathon for high school students in the Columbus area and developed an app addressing each year's theme </span>
+            <h3>Girls Who Code Summer Immersion Program</h3>
+            <span>Attended a summer long immersion program and created a website adovating against Human Trafficking as a final Project.</span><br>
+            <a id='resLink' aria-label="Download Button" href="RecentResume.pdf" lt download>Link to download PDF Resume<a/>
+
+          </div>
+        </div>
+
+     </div>
+     <script type="text/javascript">
+       maintainAcc();
+     </script>
+
+  </body>
+</html>

@@ -1,0 +1,374 @@
+#name{
+  text-decoration: underline;
+  text-decoration-color: #f76c6c;
+}
+header h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  margin: 0px;
+  margin-left: 10px;
+}
+nav{
+  margin-top: 10px;
+  margin-right: 10px;
+  color: #24305e;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header ul{
+  font-family: 'Playfair Display', serif;
+  list-style: none;
+  padding-inline-start: 0px;
+  display: flex;
+  font-size: 18px;
+}
+header li{
+  padding: 0px 20px 0px 20px;
+}
+
+header a{
+  color: #24305e;
+}
+
+header ul a{
+  text-decoration: none;
+  height: 30px;
+}
+
+header li:hover, header li:active {
+  text-decoration: underline;
+  background-color: #f76c6c;
+}
+.subnav{
+  position: absolute;
+  right: 240px;
+  width: 250px;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+  background-color: #f76c6c;
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+
+}
+.subnav:focus{
+  text-decoration: underline;
+  background-color: #f76c6c;
+}
+.hide{
+  display: none;
+}
+.projectnav{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+body{
+  background-color: #f8e9a1; /*background green*/
+  margin:0px;
+}
+.shortBio {
+  display: flex;
+  align-items: center;
+  margin: 20px 20px 0px 40px;
+
+}
+.shortBio p{
+  font-family: 'Lora', serif;
+  margin: 20px;
+}
+
+.bioText{
+  display: flex;
+  flex-direction: column;
+}
+.bioText p,.bioText h3{
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.bioText a{
+  background-color: #374785;  /*highlight pink*/
+  width: 100px;
+  height: 20px;
+  padding: 10px;
+  border: none;
+  font-family: 'Playfair Display', serif;
+  color: white;  /*blue text*/
+  font-size: 14px;
+  text-decoration: none;
+  margin: 0px 20px 10px 0px;
+
+}
+.bioText a:hover{
+  background-color: #f76c6c;
+}
+.showcase{
+  display: flex;
+  flex-direction: row;
+  margin: 0px 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.showcase h3{
+  margin: 0px;
+  flex-basis: 100%;
+}
+.bio{
+  display: flex;
+  align-items: center;
+}
+.bio img{
+  width: 25%;
+  height: 25%;
+  margin: 40px 30px;
+  border: 10px solid;
+  border-color: #a8d0e6;
+}
+
+.biography{
+  margin: 30px 20px;
+  border-bottom:  10px solid;
+  border-top:  10px solid;
+  border-color: #a8d0e6;
+}
+.bio h4, .bio h3{
+  font-family: 'Playfair Display', serif;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.bio p{
+  font-family: 'Lora', serif;
+  margin-left: 30px;
+  margin-right: 10px;
+
+}
+#logo{
+  width:95%;
+  margin: 10px;
+}
+.project{
+  background-color: #a8d0e6;
+  margin: 20px 20px;
+  padding: 20px;
+  font-family: 'Lora', serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 40%;
+  text-align: center;
+}
+.project h4{
+  font-family: 'Playfair Display', serif;
+  flex: 0 0 100%;
+  margin-bottom: 0px;
+
+}
+.projectdetail{
+  flex:50%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+}
+.project img{
+  flex:50%;
+}
+.projectBtn, {
+  background-color: #374785;  /*highlight pink*/
+  width: 100px;
+  height: 20px;
+  border: none;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: white;  /*blue text*/
+  font-size: 14px;
+  padding: 10px;
+  text-decoration: none;
+
+}
+.projectBtn:hover{
+  background-color: #f76c6c;
+}
+.projectmain{
+  display: flex;
+  flex-direction: row;
+  font-family: 'Playfair Display', serif;
+
+  align-items: center;
+}
+.projectimage{
+  flex: 50%;
+
+}
+.projectimage img{
+  width: 100%;
+  height: 100%;
+}
+
+.projectinfo{
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #a8d0e6;
+  text-align: center;
+}
+.projectinfo p{
+  margin: 0px 30px;
+  font-family: 'Lora', serif;
+
+}
+.resSection{
+  float:left;
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  font-family: 'Playfair Display', serif;
+
+}
+.resHeading{
+  cursor:pointer;
+  margin:0px 0px 0px 0px;
+  padding:20px;
+  background:#a8d0e6;
+  color:white;
+}
+.close .content{
+  height:0px;
+  transition:height 1s ease-out;
+  -webkit-transform: scaleY(0);
+  float:left;
+  display:block;
+
+}
+.open .content{
+  padding: 0px 20px;
+  background-color: #f8e9a1;
+  border: 1px solid #ddd;
+  width: 100%;
+  margin: 0px;
+  display:block;
+	transition: transform 0.4s ease;
+  box-sizing: border-box;
+}
+
+.open .resHeading{
+  margin:0px;
+  background-color: #f76c6c;
+  color: white;
+}
+.content span{
+  font-family: 'Lora', serif;
+}
+.content ul{
+  font-family: 'Lora', serif;
+  list-style-type: square;
+}
+.content span, .content ul{
+  margin-left: 20px;
+}
+#resLink{
+  background-color: #374785;  /*highlight pink*/
+  height: 15px;
+  border: none;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: white;  /*blue text*/
+  font-size: 12px;
+  padding: 5px;
+  text-decoration: none;
+  
+}
+.contactPage{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.contactPage h2{
+  flex: 100%;
+  margin-left: 20px;
+}
+.contactInfo{
+  background-color: #a8d0e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  margin-top: 0px;
+  padding: 20px;
+  flex-grow: 1;
+}
+.contactInfo a{
+  color: black;
+}
+.contactInfo a:hover, .contactInfo a:active{
+  color:#f76c6c;
+}
+.contactInfo h5{
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+}
+.contactInfo span{
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  margin: 5px;
+}
+.messageForm{
+  background-color:#a8d0e6; /*purple*/
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  margin-top: 0px;
+  padding: 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  flex-grow: 4;
+  flex-wrap: wrap;
+}
+.messageForm div{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.messageForm input{
+  border: none;
+  border-bottom: 1px solid #f76c6c;  /*blue text*/
+  padding: 8px;
+  width:30%;
+  font-family: 'Lora', serif;
+}
+form{
+  width: 100%;
+}
+.msg{
+  height: 150%;
+}
+.messageForm textarea{
+  width: 90%;
+  height: 90px;
+  resize: none;
+  border: 1px solid #f76c6c;  /*blue text*/
+  padding: 10px;
+  font-family: 'Lora', serif;
+}
+#alert{
+  font-family: 'Lora', serif;
+  font-size: 12px;
+  display: none
+}
+.sendBtn{
+  align-items: center;
+}
+:focus{
+  outline: #374785 solid 2px;
+}
