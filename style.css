@@ -182,7 +182,7 @@ body{
 .project img{
   flex:50%;
 }
-.projectBtn, {
+.projectBtn {
   background-color: #374785;  /*highlight pink*/
   width: 100px;
   height: 20px;
@@ -287,7 +287,7 @@ body{
   font-size: 12px;
   padding: 5px;
   text-decoration: none;
-  
+
 }
 .contactPage{
   display: flex;
