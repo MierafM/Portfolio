@@ -137,7 +137,7 @@ h1{
     border: none;
     box-shadow: 12px 12px #C38D94;
 }
-#workBuffer{
+#workPage{
     /* background-color: coral; */
     height: 10vh;
 }
@@ -150,7 +150,7 @@ h1{
 #work h2{
     text-align: center;
 }
-#aboutBuffer, #contactBuffer{
+#aboutPage, #contactPage{
     width: 10vw;
     height: 10vh;
     /* background-color: black;  */
@@ -235,6 +235,7 @@ h1{
     flex-flow: column nowrap;
     align-items: center;
     margin: 5%;
+    font-size: 3vh;
 }
 .contactContent{
     display: flex;
@@ -253,6 +254,7 @@ h1{
 #contactText{
     text-align: center;
     margin: 2vh 1vw;
+    font-size: 3vh;
 }
 .icon{
     color: #F4FFF8;
