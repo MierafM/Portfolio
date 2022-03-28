@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mieraf's Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.css" integrity="sha512-1Z0ScgwDmjSB6AZg0hYe7V5Sf1NQ+D08o3jscOrdwKiDfHffuz8T92XAI2YVI6trl0nNwR2RJf5lNMni1MSGiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="top frame"></div>
+    <div class="left frame"></div>
+    <div class="right frame"></div>
+    <div class="bottom frame"></div>
+
+    <nav>
+        <section class="leftNav">
+            <!-- <span>Home</span> -->
+            <a href="#homeBuffer">Home</a>
+        </section>
+        <section class="rightNav">
+            <a href="#workBuffer">Experience</a>
+            <!-- <span>Work</span> change to experience? -->
+            <a href="#aboutBuffer">About</a>
+           
+            <a href="#contactBuffer">Contact</a>
+            <a id='resumeBtn' href="MierafMulatResume.pdf">Resume</a>
+        </section>
+        
+    </nav>
+    <section id="homeBuffer">
+
+    </section>
+    <section class="page" id="home">
+        <section class="homeContent">
+            <h1>Hi, I am Mieraf!</h1>
+            <h2>I am a junior studying Computer Science at Northwestern Univeristy. I am especially intrested in using technology for social good.</h2>
+            <a id='seeProjBtn' href="#workBuffer">See What I've been working on</a>
+        </section>
+        <section id="workBuffer">
+        </section>
+        
+    </section>
+    
+    <section class="page" id="work">
+    
+        <section class="workContent">
+            <h2>Experience</h2>
+            <section class="tabs">
+                
+                <span class="option" id='firstTab' onclick="showtab('twilio', 0)">Twilio</span>
+                <span class="option" onclick="showtab('reinforcements', 1)">Reinforcements</span>
+                <span class="option" onclick="showtab('photoApp', 2)">Photo App</span>
+                <span class="option" onclick="showtab('gwc', 3)">Girls Who Code</span>
+                <span class="option" onclick="showtab('ibm', 4)">IBM Accelerate</span>
+                <span class="option" onclick="showtab('recommendify', 5)">Recommendify</span>
+                <span class="option" onclick="showtab('communityCurrency', 6)">Community Currency</span>
+                <span class="option" onclick="showtab('cssi', 7)">Google CSSI</span>
+            </section>
+            <section class="projectDescriptions">
+                <section id="twilio" >
+                    <section class="projectHeader">
+                        <h3>SWE intern </h3>
+
+                    </section>
+                    <section class="projectTools">
+
+                    </section>
+                    
+                    <section class="description">
+                        <section class="bullet">
+                            <i class="fa-solid fa-diamond"></i>
+                            <span>Incoming Software Engineering Intern working on the messaging team </span>
+                        </section>
+
+                    </section>
+                    
+                </section>
+                <section id="reinforcements" style="display:none">
+                    <section class="projectHeader">
+                        <h3>Project Manager</h3>
+
+                    </section>
+                    <section class="projectTools">
+                        <span>MONGOOSE | EJS | HTML/CSS </span>
+                    </section>
+                    
+                    <section class="description">
+                        <section class="bullet">
+                            <i class="fa-solid fa-diamond"></i>
+                            <span>Currently managing a team of 5 to create a business centered job application program</span>
+                        </section>
+                    </section>
+                    <section class="projectLinks">
+                        <a href="https://github.com/MierafM/Reinforcements">See Code</a>
+
+                    </section>
+                </section>
+                <section id="photoApp" style="display:none">
+                    <section class="projectHeader">
+                        <h3>Developer</h3>
+
+                    </section>
+                    <section class="projectTools">
+                        <span> PYTHON | FLASK | SQLALCHEMY | REACT | HTML/CSS | JS </span>
+
+                    </section>
+                    
+                    <section class="description">
+                        <section class="bullet">
+                            <i class="fa-solid fa-diamond"></i>
+                            <span>Developed a functional photo sharing app (similar to instagram) that allow users to login and interact with other's posts and stories.</span>
+                        </section>
+                        <section class="bullet">
+                            <i class="fa-solid fa-diamond"></i>
+                            <span>Built a REST API with several endpoints using Flask and SQLAlchemy</span>
+                        </section>
+                        <section class="bullet">
+                            <i class="fa-solid fa-diamond"></i>
+                            <span>Created two frontends for the app one using HTML/CSS/JS and the other using React</span>
+                        </section>
+
+                    </section>
+                    <section class="projectLinks">
+                        <a href="https://github.com/MierafM/photo-app">See Code</a>
+                        <a href="https://react-photoapp.herokuapp.com/">Launch Project</a>
+                    </section>
+                    
+                </section>
+                <section id="gwc" style="display:none">
+                    <section class="projectHeader">
+                        <section class="projectHeader">
+                            <h3>Teaching Assitant</h3>
+    
+                        </section>
+                    </section>
+                   
+                    <section class="projectTools">
+                        <span>HTML/CSS | JS</span>
+                    </section> 
+
+                    <section class="description">
+                        <section class="bullet">
+                            <i class="fa-solid fa-diamond"></i>
+                            <span>Taught CS fundamentals like HTML/CSS and JavaScript in a fast paced 2-week program to 90+ students</span>
+                        </section>
+                        <section class="bullet">
+                            <i class="fa-solid fa-diamond"></i>
+                            <span>Collaborated with 2 other teaching team members to co-host lectures and office hours, answer questions, and
+                                debug students' work</span>
+                        </section>
+                        <section class="bullet">
+                            <i class="fa-solid fa-diamond"></i>
+                            <span>Facilitated advisory groups with 30+ Students and supported with their introduction into CS with personalized
+                                feedbacks and team building activities</span>
+                        </section>
+                    </section>
+                    
+                    
+                </section>
+                <section id="ibm" style="display:none">
+                    <section class="projectHeader">
+                        <h3>Participant</h3>
+
+                    </section>
+                    <section class="projectTools">
+                        <span>REACT | EXPRESS | HTML/CSS | JS</span>
+                    </section>
+                    
+                    <section class="description">
+                        <section class="bullet">
+                            <i class="fa-solid fa-diamond"></i>
+                            <span>Attended an 8-week program with lectures on software technologies like JavaScript, React, and Express</span>
+                        </section>
+                        <section class="bullet">
+                            <i class="fa-solid fa-diamond"></i>
+                            <span>Developed technology skills specifically in Front-End technology, APIs, Back End Hosting, and SDKs</span>
+                        </section>
+                        <section class="bullet">
+                            <i class="fa-solid fa-diamond"></i>
+                            <span>Collaborated with a team of 4 to deliver a to do list app, user data display/search app, and quiz app using agile inspired scrum management</span>
+                        </section>
+
+                    </section>
+                    <section class="projectLinks">
+                        <a href="https://github.com/2021-IBM-Accelerate-SW-Track/lab-1-team-49">See Code for To-do List App</a>
+                        <a href="https://github.com/2021-IBM-Accelerate-SW-Track/lab-2-team-49">See Code for User Search App</a>
+                        <a href="https://github.com/2021-IBM-Accelerate-SW-Track/lab-3-fixed-team-49">See Code for Quiz App</a>
+
+                    </section>
+                </section>
+                <section id="recommendify" style="display:none">
+                    <section class="projectHeader">
+                        <h3>Developer</h3>
+
+                    </section>
+                    <section class="projectTools">
+                        <span>REACT | HTML/CSS | JS</span>
+                    </section>
+                    
+                    <section class="description">
+                        <section class="bullet">
+                            <i class="fa-solid fa-diamond"></i>
+                            <span>Developed a React application that utilizes the Spotify Web API to provide users song recommendations based
+                                on their recently played songs</span>
+                        </section>
+                        <section class="bullet">
+                            <i class="fa-solid fa-diamond"></i>
+                            <span>Built component that displays user's recently played tracks and generated a curated set of recommendations for
+                                users by analyzing tracks' metadata given from Spotify's API
+                                </span>
+                        </section>
+                        <section class="bullet">
+                            <i class="fa-solid fa-diamond"></i>
+                            <span>Worked on feature that updates recently played songs in real-time, display a given track's audio features, and
+                                highlight popularity</span>
+                        </section>
+
+                    </section>
+                    <section class="projectLinks">
+                        <a href="https://github.com/MierafM/recommendify">See Code</a>
+                        <a href="https://recommendify-app.herokuapp.com/">Launch Project</a>
+                    </section>
+
+                </section>
+                <section id="communityCurrency" style="display:none">
+                    <section class="projectHeader">
+                        <h3>Project Member</h3>
+
+                    </section>
+                    <section class="projectTools">
+                        <span>REACT | HTML/CSS | JS</span>
+                    </section>
+                    
+                    <section class="description">
+                        <section class="bullet">
+                            <i class="fa-solid fa-diamond"></i>
+                            <span>Collaborated with a team of 7 on building a website that stores and manages data on receptacles that collect
+                                foreign currency left at O'Hare international airport
+                                </span>
+                        </section>
+                        <section class="bullet">
+                            <i class="fa-solid fa-diamond"></i>
+                            <span>Partnered with Community Currency, a nonprofit, to allow them to track money donated to airports in real-time</span>
+                        </section>
+                        <section class="bullet">
+                            <i class="fa-solid fa-diamond"></i>
+                            <span>Implemented a setting page allowing users to manage alerts when receptacles reach their maximum capacity</span>
+                        </section>
+                        <section class="projectLinks">
+                            <a href="https://github.com/rgudivaka/CommunityCurrency">See Code</a>
+                            
+                        </section>
+                        
+                    </section>
+                </section>
+                <section id="cssi" style="display:none">
+                    <section class="projectHeader">
+                        <h3>Attendant</h3>
+
+                    </section>
+                    <section class="projectTools">
+                        <span>PYTHON | JS | HTML/CSS</span>
+                    </section>
+                    
+                    <section class="description">
+                        <section class="bullet">
+                            <i class="fa-solid fa-diamond"></i>
+                            <span>Participated in a 3-week intensive program sponsored by Google that taught various computer science subjects
+                                like HTML/CSS, JavaScript, Python</span>
+                        </section>
+                        <section class="bullet">
+                            <i class="fa-solid fa-diamond"></i>
+                            <span>Co-created 123preach: a video platform with curated spiritual videos and allows users to upload, view, and
+                                follow spiritual leaders</span>
+                        </section>
+
+                    </section>
+                </section>
+            </section>
+        </section>
+            
+        <section id="aboutBuffer">
+        </section>
+        
+    </section>
+
+    <section class="page" id="about">
+        <section class="aboutContent">
+            <img id='myPic' src='myPic.jpg' alt='Image of Mieraf'/>
+            <section class="aboutText">
+                <h2>About Me</h2>
+                <span>I am a junior studying computer science at Northwestern University. My interest in Computer Science began when I attended Girls Who Code's Summer Immersion Program. 
+                    Since then, I've been developing, testing, and launching several projects.
+                     Outside of CS, my hobbies include reading, gardening and knitting.
+                </span>
+            </section>
+
+        </section>
+        <section id="contactBuffer">
+
+        </section>
+
+    </section>
+    <section class="page" id="contact">
+        <section class="contactContent">
+            <h2>Contact Me</h2>
+            <span id="contactText">I am always open to new opportunities and connections. Feel free to send a message, I'll get to you as soon as possible!</span>
+            <section class="links">
+            <a class='iconLink' href = "mailto: mierafmulat@gmail.com"><i class="fa fa-envelope icon"></i></a>
+            <a class='iconLink' href="https://www.linkedin.com/in/mieraf-mulat/"><i class="fa-brands fa-linkedin icon"></i></a>
+            <a class='iconLink' href="https://github.com/MierafM"><i class="fa-brands fa-github icon"></i></a>
+            </section>
+        </section>
+        
+
+    </section>
+    
+    
+
+
+</body>
+</html>
